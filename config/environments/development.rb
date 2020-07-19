@@ -30,5 +30,11 @@ Rails.application.configure do
   config.assets.quiet = true
 
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+  # mailcatcher
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
+  # devise
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.hosts << "a83ff9362faa429885479b05e8c32b36.vfs.cloud9.us-east-1.amazonaws.com"
 end
