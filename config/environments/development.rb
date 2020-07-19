@@ -30,5 +30,5 @@ Rails.application.configure do
   config.assets.quiet = true
 
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-  config.hosts << "bb3f71c37b0f43b8a440d9d9bf2631d9.vfs.cloud9.us-east-1.amazonaws.com"
+  config.hosts << "a83ff9362faa429885479b05e8c32b36.vfs.cloud9.us-east-1.amazonaws.com"
 end
